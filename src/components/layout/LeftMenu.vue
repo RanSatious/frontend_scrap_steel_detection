@@ -7,7 +7,7 @@
                  default-expand-all
                  @node-click="handleNodeClick">
             <template v-slot="{ data }">
-                <div v-title="{ mode: 'overflow', text: `${data.label}`}"
+                <div :title="data.label"
                      :class="['node-item',{ active: isMatch(data) }]">
                     <i v-if="data.icon"
                        :class="['iconfont', `${data.icon}`]"></i>
